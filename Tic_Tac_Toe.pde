@@ -1,6 +1,6 @@
 int a[] = new int [9];
 void setup() {
-  size(458,503);
+  size(458,504);
 for(int z=0;z<9;z++)
   {
     a[z]=2;
@@ -17,15 +17,19 @@ for(int z=0;z<9;z++)
   line(152,0,152,456);
   line(304,0,304,456);
   line(456,0,456,456);
+  fill(255);
+  textSize(45); 
+  textAlign(CENTER);
+  text("1st-RED 2nd-GREEN",226,495);
 }
 int d=0;
 int c;
 int b=0;
 void draw() {
-  int x =mouseX/150;
-  int y =mouseY/150;
+  int x =mouseX/152;
+  int y =mouseY/152;
 
-  int z=3*x+y;
+  int z=3*y+x;
   if(a[z]!=0&&a[z]!=1&&(mousePressed))
   {
     if(b==0)
@@ -110,26 +114,28 @@ void draw() {
 }
 
 void c(){
+  fill(153);
+  rect(0,458,458,50);
   if(b==1)
   {
     fill(255);
     textSize(45); 
     textAlign(CENTER);
-    text("First person Wins",226,492);
+    text("First person Wins",226,495);
   }
   else if(b==0)
   {
     fill(255);
     textSize(45);
     textAlign(CENTER);
-    text("Second person Wins",226,492);
+    text("Second person Wins",226,495);
   }
   else if(b==2)
   {
     fill(255);
     textSize(45);
     textAlign(CENTER);
-    text("It's a DRAW.",226,492);
+    text("It's a DRAW.",226,495);
   }
 
 }
