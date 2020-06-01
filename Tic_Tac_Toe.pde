@@ -13,6 +13,7 @@ void draw() {
   int x =mouseX/150;
   int y =mouseY/150;
 
+
   int z=3*x+y;
   if(a[z]!=0&&a[z]!=1&&(mousePressed))
   {
