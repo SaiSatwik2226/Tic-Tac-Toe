@@ -1,20 +1,22 @@
 int a[] = new int [9];
 void setup() {
-  size(458,458);
+  size(458,503);
 for(int z=0;z<9;z++)
   {
     a[z]=2;
   }
   background(153);
   strokeWeight(2);
+  //horizontal lines
   line(0,0,456,0);
   line(0,152,458,152);
   line(0,304,458,304);
   line(0,456,458,456);
-  line(0,0,0,458);
-  line(152,0,152,458);
-  line(304,0,304,458);
-  line(456,0,456,458);
+  //vertical lines
+  line(0,0,0,456);
+  line(152,0,152,456);
+  line(304,0,304,456);
+  line(456,0,456,456);
 }
 int d=0;
 int c;
@@ -113,21 +115,21 @@ void c(){
     fill(255);
     textSize(45); 
     textAlign(CENTER);
-    text("First person Wins",225,225);
+    text("First person Wins",226,492);
   }
   else if(b==0)
   {
     fill(255);
     textSize(45);
     textAlign(CENTER);
-    text("Second person Wins",225,225);
+    text("Second person Wins",226,492);
   }
   else if(b==2)
   {
     fill(255);
     textSize(45);
     textAlign(CENTER);
-    text("It's a DRAW.",225,225);
+    text("It's a DRAW.",226,492);
   }
 
 }
