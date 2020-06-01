@@ -114,6 +114,7 @@ void draw() {
 
 void c(){
   fill(153);
+  noStroke();
   rect(0,458,458,50);
   if(b==1)
   {
